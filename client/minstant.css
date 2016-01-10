@@ -28,6 +28,10 @@ body {
 	color: #31698a;
 }
 
+.font-medium {
+	font-size: 17px;
+}
+
 a.logo:hover {
 	color: #fff;
 }

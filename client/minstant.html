@@ -3,6 +3,7 @@
   <!--<script src="//twemoji.maxcdn.com/twemoji.min.js"></script>-->
   <meta charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 
 <body>
@@ -86,6 +87,7 @@
 			<p>Type in the box below to send <span class="blue">{{other_user}}</span> a message!</p>
 			<form class="js-send-chat">
 				<input class="input form-control" type="text" name="chat" placeholder="type a message here..."><br>
+				<p> Click to add an emoji: <i class="em em-smiley js-em-smiley"></i></p>
 				<button  class="btn btn-primary">Send</button> <!-- type="button" -->
 			</form>
 		</div>
@@ -95,7 +97,12 @@
 <!-- simple template that displays a message -->
 <template name="chat_message">
 <!-- TASK 1 -->
-	<img src="/{{avatar}}" class="avatar-small" alt="avatar"> <strong>{{username}}:</strong> {{text}}
+	<img src="/{{avatar}}" class="avatar-small" alt="avatar"> <span class="font-medium"><strong>{{username}}:</strong> {{text}}</span>
+<!-- emoji test
+	<br>
+	<i class="em em-astonished"></i>
+-->
+
 	<br><br>
 </template>
 
