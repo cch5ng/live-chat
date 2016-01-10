@@ -1,4 +1,12 @@
-# live-chat
-Chat application (Meteor).  #coursera #goldsmith
+# Chatty
+
+* A chat application (Meteor).  #coursera #goldsmith
+
+## Notes for Reviewers
+* In case source code must be reviewed, changes were marked with comments
+  * //TASK1
+  * //TASK2
+  * //TASK3
+* Extra credit was not done
 
 (orig: minstart)
