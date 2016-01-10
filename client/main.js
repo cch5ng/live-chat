@@ -1,5 +1,10 @@
 //client/main.js
 
+//subscriptions
+//TASK3
+Meteor.subscribe('chats');
+Meteor.subscribe('users');
+
 // set up the main template the the router will use to build pages
 Router.configure({
 	layoutTemplate: 'ApplicationLayout'
@@ -25,7 +30,7 @@ Router.route('/chat/:_id', function () {
 	var chat = Chats.findOne(filter);
 	if (!chat){// no chat matching the filter - need to insert a new one
 //TASK2
-		Meteor.call('addChat', Meteor.userId(), otherUserId);
+		chatId = Meteor.call('addChat', Meteor.userId(), otherUserId);
 	}
 	else {// there is a chat going already - use that. 
 		chatId = chat._id;
@@ -67,8 +72,14 @@ Template.chat_page.helpers({
 		var chat = Chats.findOne({_id:Session.get("chatId")});
 		return chat.messages;
 	},
+//displays the chat partner name in the title
 	other_user:function(){
-		return '';
+		var chat = Chats.findOne({_id:Session.get("chatId")});
+		if (chat.user2Id === Meteor.userId()) {
+			return Meteor.users.findOne(chat.user1Id).profile.username;
+		} else if (chat.user1Id === Meteor.userId()) {
+			return Meteor.users.findOne(chat.user2Id).profile.username;
+		}
 	},
 });
 

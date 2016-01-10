@@ -1,5 +1,7 @@
 <head>
   <title>minstant</title>
+  <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+  <meta charset="utf-8">
 </head>
 
 <body>
@@ -68,7 +70,7 @@
 
 <!-- Top level template for the chat page -->
 <template name="chat_page">
-	<h2>Type in the box below to send a message!</h2>
+	<h2>Type in the box below to send <span class="blue">{{other_user}}</span> a message!</h2>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="well well-lg">
@@ -81,9 +83,9 @@
     <div class="row">
 		<div class="col-md-12">
 			<form class="js-send-chat">
-			<input class="input" type="text" name="chat" placeholder="type a message here...">
-			<button class="btn btn-default">send</button>
-		</form>
+				<input class="input form-control" type="text" name="chat" placeholder="type a message here..."><br>
+				<button type="button" class="btn btn-primary">Send</button>
+			</form>
 		</div>
 	</div>
 </template>
