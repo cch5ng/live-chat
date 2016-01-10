@@ -74,7 +74,7 @@
 <template name="chat_page">
 	<div class="row">
 		<div class="col-md-12">
-			<h3>Let's Chat</h3>
+			<h3>Let's chat!</h3>
 			<div class="well well-lg">
 			{{#each messages}}
 			{{> chat_message}}
@@ -87,8 +87,18 @@
 			<p>Type in the box below to send <span class="blue">{{other_user}}</span> a message!</p>
 			<form class="js-send-chat">
 				<input class="input form-control" type="text" name="chat" placeholder="type a message here..."><br>
-				<p> Click to add an emoji: <i class="em em-smiley js-em-smiley"></i></p>
-				<button  class="btn btn-primary">Send</button> <!-- type="button" -->
+				<button  class="btn btn-primary">Send</button><br> <!-- type="button" -->
+				<p> Click to send an emoji: <i class="em em-smiley js-em-smiley"></i>
+					 <i class="em em-cry js-em-cry"></i>
+					 <i class="em em-scream js-em-scream"></i>
+					 <i class="em em-angry js-em-angry"></i>
+					 <i class="em em-hushed js-em-hushed"></i>
+					 <i class="em em-unamused js-em-unamused"></i>
+					 <i class="em em-two_hearts js-em-two-hearts"></i>
+					 <i class="em em-broken_heart js-em-broken-heart"></i>
+					 <i class="em em-coffee js-em-coffee"></i>
+					 <i class="em em-beer js-em-beer"></i>
+				</p>
 			</form>
 		</div>
 	</div>

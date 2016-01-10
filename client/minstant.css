@@ -21,6 +21,7 @@ body {
 .avatar-small {
 	/*height: 30px;*/
 	width: 38px;
+	border-radius: 5px;
 }
 
 .blue {

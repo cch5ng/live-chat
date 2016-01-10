@@ -118,12 +118,54 @@ Template.chat_page.events({
 	}, //end function
 
 	'click .js-em-smiley': function(event) {
-//BONUS, just copied everything from top here
-		// see if we can find a chat object in the database
-		// to which we'll add the message
-
+//BONUS
 		updateChatEmoji('😃');
-	}
+	},
+
+	'click .js-em-cry': function(event) {
+//BONUS
+		updateChatEmoji('😢');
+	},
+
+	'click .js-em-scream': function(event) {
+//BONUS
+		updateChatEmoji('😱');
+	},
+
+	'click .js-em-angry': function(event) {
+//BONUS
+		updateChatEmoji('😠');
+	},
+
+	'click .js-em-hushed': function(event) {
+//BONUS
+		updateChatEmoji('😯');
+	},
+
+	'click .js-em-unamused': function(event) {
+//BONUS
+		updateChatEmoji('😒');
+	},
+
+	'click .js-em-two-hearts': function(event) {
+//BONUS
+		updateChatEmoji('💕');
+	},
+
+	'click .js-em-broken-heart': function(event) {
+//BONUS
+		updateChatEmoji('💔');
+	},
+
+	'click .js-em-coffee': function(event) {
+//BONUS
+		updateChatEmoji('☕');
+	},
+
+	'click .js-em-beer': function(event) {
+//BONUS
+		updateChatEmoji('🍺');
+	}//,
 });
 
 //general helper function
