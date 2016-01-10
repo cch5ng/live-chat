@@ -79,7 +79,7 @@
 			{{#each messages}}
 			{{> chat_message}}
 			{{/each}}
-			</div>	
+			</div>
 		</div>
 	</div>
 	<div class="row">
@@ -88,6 +88,7 @@
 			<form class="js-send-chat">
 				<input class="input form-control" type="text" name="chat" placeholder="type a message here..."><br>
 				<button  class="btn btn-primary">Send</button><br> <!-- type="button" -->
+<!-- BONUS -->
 				<p> Click to send an emoji: <i class="em em-smiley js-em-smiley"></i>
 					 <i class="em em-cry js-em-cry"></i>
 					 <i class="em em-scream js-em-scream"></i>
@@ -108,10 +109,6 @@
 <template name="chat_message">
 <!-- TASK 1 -->
 	<img src="/{{avatar}}" class="avatar-small" alt="avatar"> <span class="font-medium"><strong>{{username}}:</strong> {{text}}</span>
-<!-- emoji test
-	<br>
-	<i class="em em-astonished"></i>
--->
 
 	<br><br>
 </template>
