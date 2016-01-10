@@ -1,7 +1,8 @@
 <head>
-  <title>minstant</title>
-  <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+  <title>Chatty</title>
+  <!--<script src="//twemoji.maxcdn.com/twemoji.min.js"></script>-->
   <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">
-        Minstant!
+      <a class="navbar-brand logo" href="/">
+        Chatty
       </a>
     </div>
     <div class="nav navbar-nav">
@@ -49,7 +50,7 @@
 
 <!-- display an individual user -->
 <template name="available_user">
-	<div class="col-md-2">
+	<div class="col-xs-12 col-sm-6 col-md-2">
 		<div class="user_avatar">
 			{{#if isMyUser _id}} 
 			<div class="bg-success">{{getUsername _id}} (YOU)
@@ -70,9 +71,9 @@
 
 <!-- Top level template for the chat page -->
 <template name="chat_page">
-	<h2>Type in the box below to send <span class="blue">{{other_user}}</span> a message!</h2>
 	<div class="row">
 		<div class="col-md-12">
+			<h4>Let's Chat</h4>
 			<div class="well well-lg">
 			{{#each messages}}
 			{{> chat_message}}
@@ -80,8 +81,9 @@
 			</div>	
 		</div>
 	</div>
-    <div class="row">
+	<div class="row">
 		<div class="col-md-12">
+			<p>Type in the box below to send <span class="blue">{{other_user}}</span> a message!</p>
 			<form class="js-send-chat">
 				<input class="input form-control" type="text" name="chat" placeholder="type a message here..."><br>
 				<button type="button" class="btn btn-primary">Send</button>
