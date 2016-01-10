@@ -39,6 +39,10 @@ a.logo:hover {
 
 /* overwrite bootstrap */
 
+a#forgot-password-link, a#signup-link {
+	color: #000;
+}
+
 .navbar-default {
 /*	background-color: #acc3d0;*/
 /*	background-color: #391951;*/
