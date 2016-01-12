@@ -1,0 +1,79 @@
+//client/minstant.scss
+
+//variables
+$text-links: #fff;
+
+body {
+	background: url('diamond_eyes.png');
+}
+
+.logo {
+	font-family: 'Vidaloka', serif;
+	font-size: 24px;
+}
+
+.user_avatar{
+	min-height:100px;
+	text-align: center;
+
+}
+.avatar_img{
+	height:75px;
+}
+
+.avatar-small {
+	/*height: 30px;*/
+	width: 38px;
+	border-radius: 5px;
+}
+
+.blue {
+/*	color: #214852;*/
+	color: #31698a;
+}
+
+.font-medium {
+	font-size: 17px;
+}
+
+a.logo:hover {
+	color: $text-links;
+}
+
+/* overwrite bootstrap */
+
+a#forgot-password-link, a#signup-link {
+	color: #000;
+}
+
+.navbar-default {
+/*	background-color: #acc3d0;*/
+/*	background-color: #391951;*/
+	background-color: #6d657f;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: $text-links;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 15px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: $text-links;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		border-radius: 0;
+	}
+}

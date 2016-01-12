@@ -1,1 +1,3 @@
 /.meteor
+/client/.sass-cache
+/client/minstant.css.map
